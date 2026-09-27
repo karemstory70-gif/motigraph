@@ -1,0 +1,20 @@
+{
+  "welcome": "Welcome to MotiGraph",
+  "description": "A single platform for everything you need for creativity, learning, and your infrastructure.",
+  "title1": "Learn. Create. Unleash.",
+  "description1": "A single platform for everything you need to be creative, learn, and build your career.",
+  "title2": "Practical skills, real opportunities.",
+  "description2": "Access to specialized courses, hands-on training, and guidance from real professionals.\n",
+  "title3": "Your professional journey starts here.",
+  "description3": "Join a community that believes in your potential and helps you turn it into real success.",
+  "Next": "Next",
+  "skip": "skip",
+  "login": "Login",
+  "register": "Register",
+  "settings": "Settings",
+  "language": "Language",
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "system": "System"
+}
