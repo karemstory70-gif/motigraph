@@ -6,6 +6,7 @@ import 'package:motigraph/onpoding/onboarding_data.dart';
 import 'package:motigraph/onpoding/onbording_page.dart';
 import 'package:motigraph/splash_screen.dart';
 import 'package:motigraph/settings/app_settings_controller.dart';
+import 'package:motigraph/widgets/theme_toggle.dart';
 
 class OnboardingScreen extends StatefulWidget {
   final AppSettingsController settingsController;
@@ -22,8 +23,7 @@ class OnboardingScreen extends StatefulWidget {
 
 class _OnboardingScreenState
     extends State<OnboardingScreen> {
-  final PageController _pageController =
-  PageController();
+  final PageController _pageController = PageController();
 
   int _currentPage = 0;
 
@@ -139,10 +139,6 @@ class _OnboardingScreenState
         ),
         child: Row(
           children: [
-            // =========================
-            // Logo
-            // =========================
-
             Text(
               'MOTIGRAPH',
               style: TextStyle(
@@ -155,34 +151,16 @@ class _OnboardingScreenState
 
             const Spacer(),
 
-            // =========================
-            // Theme
-            // =========================
-
-            _ToggleContainer(
-              children: [
-                _ToggleButton(
-                  icon: Icons.light_mode_outlined,
-                  label: 'light'.tr(),
-                  selected: !isDark,
-                  onTap: () {
-                    _changeTheme(
-                      ThemeMode.light,
-                    );
-                  },
-                ),
-
-                _ToggleButton(
-                  icon: Icons.dark_mode_outlined,
-                  label: 'dark'.tr(),
-                  selected: isDark,
-                  onTap: () {
-                    _changeTheme(
-                      ThemeMode.dark,
-                    );
-                  },
-                ),
-              ],
+            ThemeToggle(
+              isDark: isDark,
+              lightLabel: 'light'.tr(),
+              darkLabel: 'dark'.tr(),
+              onLight: () {
+                _changeTheme(ThemeMode.light);
+              },
+              onDark: () {
+                _changeTheme(ThemeMode.dark);
+              },
             ),
           ],
         ),

@@ -13,8 +13,43 @@
   "home": "Home",
   "academy": "Academy",
   "business_library": "Business Library",
-  "works": "Works",
+
+  "services": "Services",
+  "web_development": "Web Development",
+  "web_development_description": "Modern, fast, and scalable websites built for your business.",
+
+  "app_mobile_development": "App Development",
+  "app_development_description": "Powerful mobile apps designed to turn your ideas into real products.",
+
+  "digital_marketing": "Digital Marketing",
+  "digital_marketing_description": "Smart digital strategies that help your brand reach the right audience.",
+
+  "motion_graphics": "Motion Graphics",
+  "motion_graphics_description": "Engaging visual content that makes your brand stand out.",
+
+  "cybersecurity": "Cybersecurity",
+  "cybersecurity_description": "Protect your digital assets with reliable security solutions.",
+
+  "training": "Corporate Training",
+  "training_description": "Practical training programs designed to develop your team's skills.",
+
+  "courses": "Professional Courses",
+  "courses_description": "Learn practical skills through focused courses built for real-world growth.",
+
+  "profile": "Profile",
+  "settings": "Settings",
   "account": "Account",
+  "guest_user": "Guest User",
+  "guest_email": "guest@motigraph.com",
+  "edit_profile": "Edit Profile",
+  "notifications": "Notifications",
+  "about": "About",
+  "logout": "Logout",
+  "language": "Language",
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+
   "login": "Login",
   "register": "Register",
   "settings": "Settings",

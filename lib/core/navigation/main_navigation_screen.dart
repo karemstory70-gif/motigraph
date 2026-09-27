@@ -42,6 +42,10 @@ class _MainNavigationScreenState
     super.dispose();
   }
 
+  // ======================================================
+  // Navigation Tap
+  // ======================================================
+
   void _onNavigationTap(int index) {
     setState(() {
       _currentIndex = index;
@@ -49,16 +53,26 @@ class _MainNavigationScreenState
 
     _pageController.animateToPage(
       index,
-      duration: const Duration(milliseconds: 300),
+      duration: const Duration(
+        milliseconds: 300,
+      ),
       curve: Curves.easeInOut,
     );
   }
+
+  // ======================================================
+  // Page Changed
+  // ======================================================
 
   void _onPageChanged(int index) {
     setState(() {
       _currentIndex = index;
     });
   }
+
+  // ======================================================
+  // Build
+  // ======================================================
 
   @override
   Widget build(BuildContext context) {
@@ -67,48 +81,86 @@ class _MainNavigationScreenState
         controller: _pageController,
         onPageChanged: _onPageChanged,
 
-        children: const [
-          HomePage(),
-          AcademyPage(),
-          BusinessLibraryPage(),
-          WorksPage(),
-          AccountPage(),
+        children: [
+          const HomePage(),
+
+          const AcademyPage(),
+
+          const BusinessLibraryPage(),
+
+          // ==============================================
+          // Works
+          // ==============================================
+
+          WorksPage(
+            settingsController:
+            widget.settingsController,
+          ),
+
+          AccountPage(
+            settingsController: widget.settingsController,
+          ),
         ],
       ),
+
+      // ==================================================
+      // Bottom Navigation
+      // ==================================================
 
       bottomNavigationBar: NavigationBar(
         selectedIndex: _currentIndex,
 
-        onDestinationSelected: _onNavigationTap,
+        onDestinationSelected:
+        _onNavigationTap,
 
         destinations: [
           NavigationDestination(
-            icon: const Icon(Icons.home_outlined),
-            selectedIcon: const Icon(Icons.home),
+            icon: const Icon(
+              Icons.home_outlined,
+            ),
+            selectedIcon: const Icon(
+              Icons.home,
+            ),
             label: 'home'.tr(),
           ),
 
           NavigationDestination(
-            icon: const Icon(Icons.school_outlined),
-            selectedIcon: const Icon(Icons.school),
+            icon: const Icon(
+              Icons.school_outlined,
+            ),
+            selectedIcon: const Icon(
+              Icons.school,
+            ),
             label: 'academy'.tr(),
           ),
 
           NavigationDestination(
-            icon: const Icon(Icons.library_books_outlined),
-            selectedIcon: const Icon(Icons.library_books),
+            icon: const Icon(
+              Icons.library_books_outlined,
+            ),
+            selectedIcon: const Icon(
+              Icons.library_books,
+            ),
             label: 'business_library'.tr(),
           ),
 
           NavigationDestination(
-            icon: const Icon(Icons.work_outline),
-            selectedIcon: const Icon(Icons.work),
-            label: 'works'.tr(),
+            icon: const Icon(
+              Icons.work_outline,
+            ),
+            selectedIcon: const Icon(
+              Icons.work,
+            ),
+            label: 'services'.tr(),
           ),
 
           NavigationDestination(
-            icon: const Icon(Icons.person_outline),
-            selectedIcon: const Icon(Icons.person),
+            icon: const Icon(
+              Icons.person_outline,
+            ),
+            selectedIcon: const Icon(
+              Icons.person,
+            ),
             label: 'account'.tr(),
           ),
         ],
