@@ -1,9 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:motigraph/core/navigation/main_navigation_screen.dart';
 
 import 'package:motigraph/onpoding/onboarding_data.dart';
 import 'package:motigraph/onpoding/onbording_page.dart';
-import 'package:motigraph/screens/splash_screen.dart';
+import 'package:motigraph/splash_screen.dart';
 import 'package:motigraph/settings/app_settings_controller.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -68,8 +69,15 @@ class _OnboardingScreenState
   // ======================================================
 
   void _finishOnboarding() {
-    // هنضيف الـ Home هنا بعد ما نجهزه.
-  }
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => MainNavigationScreen(
+            settingsController: widget.settingsController,
+          ),
+        ),
+      );
+    }
 
   // ======================================================
   // Change Theme
@@ -229,28 +237,70 @@ class _OnboardingScreenState
 
           Padding(
             padding: const EdgeInsets.symmetric(
-              horizontal: 40,
+              horizontal: 24,
               vertical: 15,
             ),
             child: Row(
               children: [
-                TextButton(
-                  onPressed: _skip,
-                  child: Text(
-                    'skip'.tr(),
+                if (_currentPage < 3)
+                  TextButton(
+                    onPressed: _skip,
+                    child: Text(
+                      'skip'.tr(),
+                    ),
                   ),
-                ),
 
-                const Spacer(),
+                if (_currentPage < 3)
+                  const Spacer(),
 
-                ElevatedButton(
-                  onPressed: _nextPage,
-                  child: Text(
-                    _currentPage == 3
-                        ? 'start_now'.tr()
-                        : 'next'.tr(),
-                  ),
-                ),
+                if (_currentPage < 3)
+                  Expanded(
+                    child: SizedBox(
+                      height: 58,
+                      child: ElevatedButton(
+                        onPressed: _nextPage,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFFD4AF37),
+                          foregroundColor: Colors.black,
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
+                        child: Text(
+                          'next'.tr(),
+                          style: const TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                else
+                  Expanded(
+                    child: SizedBox(
+                      height: 58,
+                      child: ElevatedButton(
+                        onPressed: _finishOnboarding,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFFD4AF37),
+                          foregroundColor: Colors.black,
+                          elevation: 0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                        ),
+                        child: Text(
+                          'start_now'.tr(),
+                          style: const TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
               ],
             ),
           ),

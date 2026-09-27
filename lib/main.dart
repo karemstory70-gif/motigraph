@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:motigraph/onpoding/onbording_screen.dart';
-import 'package:motigraph/screens/splash_screen.dart';
+import 'package:motigraph/splash_screen.dart';
 import 'package:motigraph/settings/app_settings_controller.dart';
 import 'core/theme/app_theme.dart';
 
