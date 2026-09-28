@@ -194,8 +194,45 @@
   "cybersecurity_training_point_1": "أساسيات الأمن والوعي الأمني.",
   "cybersecurity_training_point_2": "التعرف على المخاطر الأمنية الشائعة.",
   "cybersecurity_training_point_3": "ممارسات الحماية والدفاع العملية.",
+  "enroll_request": "طلب التسجيل",
+  "training_request": "طلب التدريب",
+  "service_request": "طلب الخدمة",
 
+  "course_request_description": "أخبرنا قليلًا عن نفسك وسنساعدك على البدء.",
+  "training_request_description": "أخبرنا عن احتياجاتك التدريبية وسيتواصل معك فريقنا.",
+  "service_request_description": "أخبرنا عن مشروعك وسيتواصل معك فريقنا.",
 
+  "your_information": "بياناتك",
+  "name": "الاسم",
+  "enter_your_name": "أدخل اسمك",
+  "name_required": "يرجى إدخال اسمك",
+
+  "phone": "رقم الهاتف / واتساب",
+  "enter_phone_number": "أدخل رقم هاتفك",
+  "phone_required": "يرجى إدخال رقم هاتفك",
+
+  "email": "البريد الإلكتروني",
+  "enter_email": "أدخل بريدك الإلكتروني",
+
+  "request_details": "تفاصيل الطلب",
+  "selected_item": "العنصر المحدد",
+  "what_do_you_need": "ماذا تحتاج؟",
+  "project_details": "تفاصيل المشروع",
+  "describe_your_request": "أخبرنا عن طلبك...",
+
+  "preferred_contact": "طريقة التواصل المفضلة",
+  "whatsapp": "واتساب",
+  "phone_call": "مكالمة هاتفية",
+
+  "send_request": "إرسال الطلب",
+  "request_sent_successfully": "تم إرسال طلبك بنجاح.",
+
+  "flutter": "تطوير Flutter",
+  "programming": "البرمجة",
+  "website": "موقع إلكتروني",
+  "mobile_application": "تطبيق موبايل",
+  "mobile_development": "تطوير تطبيقات الموبايل",
+  "other": "أخرى",
   "profile": "الملف الشخصي",
   "settings": "الإعدادات",
   "account": "الحساب",

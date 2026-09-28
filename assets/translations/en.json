@@ -195,6 +195,49 @@
   "cybersecurity_training_point_2": "Identifying common security risks.",
   "cybersecurity_training_point_3": "Practical protection and defensive practices.",
 
+  "enroll_request": "Enroll Request",
+  "training_request": "Training Request",
+  "service_request": "Service Request",
+
+  "course_request_description": "Tell us a little about yourself and we will help you get started.",
+  "training_request_description": "Tell us about your training needs and our team will contact you.",
+  "service_request_description": "Tell us about your project and our team will contact you.",
+
+  "your_information": "Your Information",
+  "name": "Name",
+  "enter_your_name": "Enter your name",
+  "name_required": "Please enter your name",
+
+  "phone": "Phone / WhatsApp",
+  "enter_phone_number": "Enter your phone number",
+  "phone_required": "Please enter your phone number",
+
+  "email": "Email",
+  "enter_email": "Enter your email",
+
+  "request_details": "Request Details",
+  "selected_item": "Selected",
+  "what_do_you_need": "What do you need?",
+  "project_details": "Project Details",
+  "describe_your_request": "Tell us about your request...",
+
+  "preferred_contact": "Preferred Contact",
+  "whatsapp": "WhatsApp",
+  "phone_call": "Phone Call",
+
+  "send_request": "Send Request",
+  "request_sent_successfully": "Your request has been sent successfully.",
+
+  "flutter": "Flutter Development",
+  "programming": "Programming",
+  "website": "Website",
+  "mobile_application": "Mobile Application",
+  "digital_marketing": "Digital Marketing",
+  "motion_graphics": "Motion Graphics",
+  "cybersecurity": "Cybersecurity",
+  "mobile_development": "Mobile Development",
+  "web_development": "Web Development",
+  "other": "Other",
 
   "profile": "Profile",
   "settings": "Settings",

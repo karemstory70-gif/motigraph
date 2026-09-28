@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 import 'package:motigraph/core/models/feature_data.dart';
+import 'package:motigraph/screens/request/request_page.dart';
 import 'package:motigraph/widgets/moti_glass_card.dart';
 
 class DetailsPage extends StatelessWidget {
@@ -265,8 +266,14 @@ class _CourseDetails extends StatelessWidget {
         _ActionButton(
           text: 'enroll_now'.tr(),
           onTap: () {
-            debugPrint(
-              'Enroll course: ${course.title}',
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => RequestPage(
+                  type: RequestType.course,
+                  title: course.title,
+                ),
+              ),
             );
           },
         ),
@@ -322,8 +329,14 @@ class _TrainingDetails extends StatelessWidget {
         _ActionButton(
           text: 'request_training'.tr(),
           onTap: () {
-            debugPrint(
-              'Request training: ${training.title}',
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => RequestPage(
+                  type: RequestType.training,
+                  title: training.title,
+                ),
+              ),
             );
           },
         ),
@@ -380,8 +393,14 @@ class _ServiceDetails extends StatelessWidget {
         _ActionButton(
           text: 'request_service'.tr(),
           onTap: () {
-            debugPrint(
-              'Request service: ${service.title}',
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => RequestPage(
+                  type: RequestType.service,
+                  title: service.title,
+                ),
+              ),
             );
           },
         ),
