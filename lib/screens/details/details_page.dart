@@ -20,6 +20,10 @@ class DetailsPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
 
+      // ======================================================
+      // App Bar
+      // ======================================================
+
       appBar: AppBar(
         elevation: 0,
         backgroundColor: theme.scaffoldBackgroundColor,
@@ -34,10 +38,14 @@ class DetailsPage extends StatelessWidget {
         ),
       ),
 
+      // ======================================================
+      // Scrollable Content
+      // ======================================================
+
       body: CustomScrollView(
         slivers: [
           // --------------------------------------------------
-          // Optional Preview Video
+          // Video
           // --------------------------------------------------
 
           SliverToBoxAdapter(
@@ -62,11 +70,11 @@ class DetailsPage extends StatelessWidget {
 
           SliverToBoxAdapter(
             child: Padding(
-              padding: EdgeInsets.fromLTRB(
+              padding: const EdgeInsets.fromLTRB(
                 16,
                 8,
                 16,
-                16,
+                120,
               ),
               child: MotiGlassCard(
                 child: Padding(
@@ -80,11 +88,22 @@ class DetailsPage extends StatelessWidget {
           ),
         ],
       ),
+
+      // ======================================================
+      // Fixed Bottom Action
+      // ======================================================
+
+      bottomNavigationBar: _BottomActionBar(
+        item: item,
+      ),
     );
   }
-
-
 }
+
+// ============================================================
+// Details Content
+// ============================================================
+
 class _DetailsContent extends StatelessWidget {
   final FeatureData item;
 
@@ -112,6 +131,11 @@ class _DetailsContent extends StatelessWidget {
     }
   }
 }
+
+// ============================================================
+// Detail Sections
+// ============================================================
+
 class _DetailSections extends StatelessWidget {
   final List<DetailSection> sections;
 
@@ -170,6 +194,11 @@ class _DetailSections extends StatelessWidget {
     );
   }
 }
+
+// ============================================================
+// Detail Point
+// ============================================================
+
 class _DetailPoint extends StatelessWidget {
   final String text;
 
@@ -217,6 +246,11 @@ class _DetailPoint extends StatelessWidget {
     );
   }
 }
+
+// ============================================================
+// Course Details
+// ============================================================
+
 class _CourseDetails extends StatelessWidget {
   final CourseData course;
 
@@ -260,27 +294,15 @@ class _CourseDetails extends StatelessWidget {
             sections: course.sections,
           ),
         ],
-
-        const SizedBox(height: 30),
-
-        _ActionButton(
-          text: 'enroll_request'.tr(),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (_) => RequestPage(
-                  type: RequestType.course,
-                  title: course.title,
-                ),
-              ),
-            );
-          },
-        ),
       ],
     );
   }
 }
+
+// ============================================================
+// Training Details
+// ============================================================
+
 class _TrainingDetails extends StatelessWidget {
   final TrainingData training;
 
@@ -290,6 +312,8 @@ class _TrainingDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -298,7 +322,7 @@ class _TrainingDetails extends StatelessWidget {
           style: TextStyle(
             fontSize: 26,
             fontWeight: FontWeight.bold,
-            color: Theme.of(context).colorScheme.primary,
+            color: theme.colorScheme.primary,
           ),
         ),
 
@@ -309,10 +333,9 @@ class _TrainingDetails extends StatelessWidget {
           style: TextStyle(
             fontSize: 15,
             height: 1.6,
-            color: Theme.of(context)
-                .colorScheme
-                .onSurface
-                .withValues(alpha: 0.75),
+            color: theme.colorScheme.onSurface.withValues(
+              alpha: 0.75,
+            ),
           ),
         ),
 
@@ -323,27 +346,15 @@ class _TrainingDetails extends StatelessWidget {
             sections: training.sections,
           ),
         ],
-
-        const SizedBox(height: 30),
-
-        _ActionButton(
-          text: 'request_training'.tr(),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (_) => RequestPage(
-                  type: RequestType.training,
-                  title: training.title,
-                ),
-              ),
-            );
-          },
-        ),
       ],
     );
   }
 }
+
+// ============================================================
+// Service Details
+// ============================================================
+
 class _ServiceDetails extends StatelessWidget {
   final ServiceData service;
 
@@ -387,34 +398,15 @@ class _ServiceDetails extends StatelessWidget {
             sections: service.sections,
           ),
         ],
-
-        const SizedBox(height: 30),
-
-        _ActionButton(
-          text: 'request_service'.tr(),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (_) => RequestPage(
-                  type: RequestType.service,
-                  title: service.title,
-                ),
-              ),
-            );
-          },
-        ),
       ],
     );
   }
 }
-// ========================================================
-// Video Section
-// ========================================================
 
-// ========================================================
+// ============================================================
 // Video Section
-// ========================================================
+// ============================================================
+
 class _VideoSection extends StatelessWidget {
   final FeatureData item;
 
@@ -437,9 +429,9 @@ class _VideoSection extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            // ==================================================
+            // ------------------------------------------------
             // Thumbnail / Placeholder
-            // ==================================================
+            // ------------------------------------------------
 
             if (item.image != null)
               Positioned.fill(
@@ -455,15 +447,16 @@ class _VideoSection extends StatelessWidget {
                   child: Icon(
                     Icons.play_circle_outline_rounded,
                     size: 70,
-                    color: theme.colorScheme.primary
-                        .withValues(alpha: 0.35),
+                    color: theme.colorScheme.primary.withValues(
+                      alpha: 0.35,
+                    ),
                   ),
                 ),
               ),
 
-            // ==================================================
-            // Dark Overlay
-            // ==================================================
+            // ------------------------------------------------
+            // Overlay
+            // ------------------------------------------------
 
             Positioned.fill(
               child: Container(
@@ -473,9 +466,9 @@ class _VideoSection extends StatelessWidget {
               ),
             ),
 
-            // ==================================================
+            // ------------------------------------------------
             // Play Button
-            // ==================================================
+            // ------------------------------------------------
 
             Material(
               color: theme.colorScheme.tertiary,
@@ -488,7 +481,6 @@ class _VideoSection extends StatelessWidget {
                     'Play video: ${item.videoUrl}',
                   );
                 }
-
                     : null,
                 child: Padding(
                   padding: const EdgeInsets.all(18),
@@ -509,14 +501,228 @@ class _VideoSection extends StatelessWidget {
   }
 }
 
+// ============================================================
+// Fixed Bottom Action Bar
+// ============================================================
+
+class _BottomActionBar extends StatelessWidget {
+  final FeatureData item;
+
+  const _BottomActionBar({
+    required this.item,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    return SafeArea(
+      top: false,
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(
+          16,
+          10,
+          16,
+          10,
+        ),
+        decoration: BoxDecoration(
+          color: theme.scaffoldBackgroundColor,
+          border: Border(
+            top: BorderSide(
+              color: theme.colorScheme.onSurface.withValues(
+                alpha: 0.08,
+              ),
+            ),
+          ),
+          boxShadow: [
+            BoxShadow(
+              blurRadius: 18,
+              offset: const Offset(0, -6),
+              color: Colors.black.withValues(
+                alpha: 0.10,
+              ),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            // ------------------------------------------------
+            // Price
+            // ------------------------------------------------
+
+            Expanded(
+              flex: 2,
+              child: _PriceSection(
+                item: item,
+              ),
+            ),
+
+            const SizedBox(width: 14),
+
+            // ------------------------------------------------
+            // Action
+            // ------------------------------------------------
+
+            Expanded(
+              flex: 3,
+              child: _ActionButton(
+                item: item,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+// ============================================================
+// Price Section
+// ============================================================
+
+// ============================================================
+// Price Section
+// ============================================================
+
+class _PriceSection extends StatelessWidget {
+  final FeatureData item;
+
+  const _PriceSection({
+    required this.item,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
+    final price = item.price;
+    final finalPrice = item.finalPrice;
+
+    // --------------------------------------------------------
+    // No Price
+    // --------------------------------------------------------
+
+    if (price == null) {
+      return Text(
+        'contact_us'.tr(),
+        style: TextStyle(
+          fontSize: 15,
+          fontWeight: FontWeight.w700,
+          color: theme.colorScheme.primary,
+        ),
+      );
+    }
+
+    final hasDiscount = item.hasDiscount;
+
+    // --------------------------------------------------------
+    // Price
+    // --------------------------------------------------------
+
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // ----------------------------------------------------
+        // Discount Badge
+        // ----------------------------------------------------
+
+        if (hasDiscount)
+          Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 7,
+              vertical: 3,
+            ),
+            decoration: BoxDecoration(
+              color: theme.colorScheme.tertiary.withValues(
+                alpha: 0.12,
+              ),
+              borderRadius: BorderRadius.circular(6),
+              border: Border.all(
+                color: theme.colorScheme.tertiary.withValues(
+                  alpha: 0.25,
+                ),
+              ),
+            ),
+            child: Text(
+              '${item.discount!.toStringAsFixed(0)}% ${'off'.tr()}',
+              style: TextStyle(
+                fontSize: 9,
+                fontWeight: FontWeight.w800,
+                color: theme.colorScheme.tertiary,
+              ),
+            ),
+          ),
+
+        if (hasDiscount)
+          const SizedBox(height: 4),
+
+        // ----------------------------------------------------
+        // Current Price
+        // ----------------------------------------------------
+
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.baseline,
+          textBaseline: TextBaseline.alphabetic,
+          children: [
+            Text(
+              '${(finalPrice ?? price).toStringAsFixed(0)}',
+              style: TextStyle(
+                fontSize: 21,
+                fontWeight: FontWeight.w800,
+                color: theme.colorScheme.primary,
+              ),
+            ),
+
+            const SizedBox(width: 3),
+
+            Text(
+              'EGP',
+              style: TextStyle(
+                fontSize: 9,
+                fontWeight: FontWeight.w700,
+                color: theme.colorScheme.onSurface.withValues(
+                  alpha: 0.55,
+                ),
+              ),
+            ),
+          ],
+        ),
+
+        // ----------------------------------------------------
+        // Original Price
+        // ----------------------------------------------------
+
+        if (hasDiscount) ...[
+          const SizedBox(height: 1),
+
+          Text(
+            '${price.toStringAsFixed(0)} EGP',
+            style: TextStyle(
+              fontSize: 12,
+              decoration: TextDecoration.lineThrough,
+              decorationThickness: 1.2,
+              color: theme.colorScheme.onSurface.withValues(
+                alpha: 0.38,
+              ),
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+// ============================================================
+// Action Button
+// ============================================================
 
 class _ActionButton extends StatelessWidget {
-  final String text;
-  final VoidCallback onTap;
+  final FeatureData item;
 
   const _ActionButton({
-    required this.text,
-    required this.onTap,
+    required this.item,
   });
 
   @override
@@ -524,19 +730,51 @@ class _ActionButton extends StatelessWidget {
     final theme = Theme.of(context);
 
     return SizedBox(
-      width: double.infinity,
+      height: 50,
       child: Material(
         color: theme.colorScheme.tertiary,
-        borderRadius: BorderRadius.circular(11),
+        borderRadius: BorderRadius.circular(12),
         child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(11),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(
-              vertical: 13,
-            ),
+          onTap: () {
+            switch (item) {
+              case CourseData course:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => RequestPage(
+                      type: RequestType.course,
+                      title: course.title,
+                    ),
+                  ),
+                );
+
+              case TrainingData training:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => RequestPage(
+                      type: RequestType.training,
+                      title: training.title,
+                    ),
+                  ),
+                );
+
+              case ServiceData service:
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => RequestPage(
+                      type: RequestType.service,
+                      title: service.title,
+                    ),
+                  ),
+                );
+            }
+          },
+          borderRadius: BorderRadius.circular(12),
+          child: Center(
             child: Text(
-              text,
+              _getButtonText(),
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 14,
@@ -548,5 +786,18 @@ class _ActionButton extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  String _getButtonText() {
+    switch (item) {
+      case CourseData _:
+        return 'enroll_request'.tr();
+
+      case TrainingData _:
+        return 'training_request'.tr();
+
+      case ServiceData _:
+        return 'service_request'.tr();
+    }
   }
 }

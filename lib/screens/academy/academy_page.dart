@@ -27,6 +27,8 @@ class AcademyPage extends StatefulWidget {
       title: 'web_development',
       description: 'web_development_description',
       image: 'assets/images/onboarding_1.png',
+      price: 5000,
+      discount: 20,
 
       detailsTitle:
       'web_development_course_details_title',
@@ -64,6 +66,8 @@ class AcademyPage extends StatefulWidget {
       title: 'app_development',
       description: 'app_development_description',
       image: 'assets/images/onboarding_2.png',
+      price: 5000,
+      discount: 20,
 
       detailsTitle:
       'app_development_course_details_title',
@@ -101,7 +105,8 @@ class AcademyPage extends StatefulWidget {
       title: 'digital_marketing',
       description: 'digital_marketing_description',
       image: 'assets/images/onboarding_3.png',
-
+      price: 5000,
+      discount: 20,
       detailsTitle:
       'digital_marketing_course_details_title',
 
@@ -128,7 +133,8 @@ class AcademyPage extends StatefulWidget {
       title: 'motion_graphics',
       description: 'motion_graphics_description',
       image: 'assets/images/onboarding_1.png',
-
+      price: 5000,
+      discount: 20,
       detailsTitle:
       'motion_graphics_course_details_title',
 
@@ -155,7 +161,8 @@ class AcademyPage extends StatefulWidget {
       title: 'cybersecurity',
       description: 'cybersecurity_description',
       image: 'assets/images/onboarding_2.png',
-
+      price: 5000,
+      discount: 20,
       detailsTitle:
       'cybersecurity_course_details_title',
 
@@ -183,7 +190,8 @@ class AcademyPage extends StatefulWidget {
       title: 'web_development',
       description: 'web_development_description',
       image: 'assets/images/onboarding_1.png',
-
+      price: 5000,
+      discount: 20,
       detailsTitle:
       'web_development_training_details_title',
 
@@ -210,7 +218,8 @@ class AcademyPage extends StatefulWidget {
       title: 'app_development',
       description: 'app_development_description',
       image: 'assets/images/onboarding_2.png',
-
+      price: 5000,
+      discount: 20,
       detailsTitle:
       'app_development_training_details_title',
 
@@ -237,7 +246,8 @@ class AcademyPage extends StatefulWidget {
       title: 'cybersecurity',
       description: 'cybersecurity_description',
       image: 'assets/images/onboarding_3.png',
-
+      price: 5000,
+      discount: 20,
       detailsTitle:
       'cybersecurity_training_details_title',
 

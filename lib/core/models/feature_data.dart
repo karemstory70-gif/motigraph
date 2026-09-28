@@ -27,10 +27,16 @@ sealed class FeatureData {
   final List<DetailSection> sections;
 
   /// Optional preview video.
-  /// If null or empty, no video section is shown.
   final String? videoUrl;
 
   final FeatureType type;
+
+  /// Original price.
+  final double? price;
+
+  /// Discount percentage.
+  /// Example: 20 means 20%.
+  final double? discount;
 
   const FeatureData({
     required this.title,
@@ -41,7 +47,30 @@ sealed class FeatureData {
     this.sections = const [],
     this.videoUrl,
     required this.type,
+    this.price,
+    this.discount,
   });
+
+  /// Price after applying the discount.
+  double? get finalPrice {
+    if (price == null) {
+      return null;
+    }
+
+    if (discount == null || discount! <= 0) {
+      return price;
+    }
+
+    return price! - (price! * discount! / 100);
+  }
+
+  /// Whether this feature has an active discount.
+  bool get hasDiscount {
+    return price != null &&
+        discount != null &&
+        discount! > 0 &&
+        discount! < 100;
+  }
 }
 
 class ServiceData extends FeatureData {
@@ -53,6 +82,8 @@ class ServiceData extends FeatureData {
     required super.detailsDescription,
     super.sections,
     super.videoUrl,
+    super.price,
+    super.discount,
   }) : super(
     type: FeatureType.service,
   );
@@ -67,6 +98,8 @@ class CourseData extends FeatureData {
     required super.detailsDescription,
     super.sections,
     super.videoUrl,
+    super.price,
+    super.discount,
   }) : super(
     type: FeatureType.course,
   );
@@ -81,6 +114,8 @@ class TrainingData extends FeatureData {
     required super.detailsDescription,
     super.sections,
     super.videoUrl,
+    super.price,
+    super.discount,
   }) : super(
     type: FeatureType.training,
   );
