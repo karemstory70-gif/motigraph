@@ -264,7 +264,7 @@ class _CourseDetails extends StatelessWidget {
         const SizedBox(height: 30),
 
         _ActionButton(
-          text: 'enroll_now'.tr(),
+          text: 'enroll_request'.tr(),
           onTap: () {
             Navigator.push(
               context,
