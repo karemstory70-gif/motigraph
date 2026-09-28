@@ -11,9 +11,16 @@ class LightTheme {
       colorScheme: const ColorScheme.light(
         primary: Colors.black,
         secondary: Colors.black,
+
+        tertiary: Color(0xFFD4AF37),
+
         surface: Colors.white,
+
         onPrimary: Colors.white,
         onSecondary: Colors.white,
+
+        onTertiary: Colors.black,
+
         onSurface: Colors.black,
       ),
 

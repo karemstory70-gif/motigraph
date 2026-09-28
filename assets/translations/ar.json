@@ -1,19 +1,32 @@
 {
-  "welcome": "اهلا بك فى موتى جراف",
-  "description": "منصة واحدة لكل ما تحتاجه للابداع والتعلم وبناء مستقبلك المهنى",
-  "title1": "تعلم. ابدع. انطلق",
-  "description1": "منصة واحده لكل ما تحتاجه للابداع. التعلم وبناء مستقبلك المهنى.",
-  "title2": "مهارات عملية فرص حقيقية ",
-  "description2": "الوصول الى دورات متخصصة وتدريب عملى وارشاد من محترفين حقيقيين",
-  "title3": "رحلتك المهنية تبدا من هنا",
-  "description3": "انضم الى مجتمع يؤمن بامكانياتك ويساعدك الى تحويلها الى نجاح حقيقى ",
-  "next": "التالى",
-  "skip": "تخطى",
-  "start_now": "ابدا الان",
+  "welcome": "أهلاً بك في موتي جراف",
+  "description": "منصة واحدة لكل ما تحتاجه للإبداع والتعلم وبناء مستقبلك المهني.",
+  "title1": "تعلّم. أبدع. انطلق.",
+  "description1": "منصة واحدة لكل ما تحتاجه للإبداع والتعلم وبناء مستقبلك المهني.",
+  "title2": "مهارات عملية. فرص حقيقية.",
+  "description2": "الوصول إلى دورات متخصصة وتدريب عملي وإرشاد من محترفين حقيقيين.",
+  "title3": "رحلتك المهنية تبدأ من هنا.",
+  "description3": "انضم إلى مجتمع يؤمن بإمكانياتك ويساعدك على تحويلها إلى نجاح حقيقي.",
+  "Next": "التالي",
+  "skip": "تخطي",
+  "start_now": "ابدأ الآن",
   "home": "الرئيسية",
-  "academy": "الأكاديمي",
+
+  "academy": "الأكاديمية",
+  "academy_courses_title": "تعلّم. ابنِ. تطوّر.",
+  "academy_courses_description": "طوّر مهاراتك العملية من خلال كورسات تساعدك على التعلّم والبناء.",
+  "academy_training_title": "تدرّب. طبّق. تطوّر.",
+  "academy_training_description": "تدريب تقني يركز على مهارات البرمجة والتطوير بشكل عملي.",
+  "courses": "الكورسات",
+  "training": "التدريب",
+
   "business_library": "مكتبة الأعمال",
-  "services": "خدمات",
+
+  "services": "الخدمات",
+  "services_title": "ابنِ. طوّر. انطلق.",
+  "services_description": "خدمات رقمية تساعدك على تحويل أفكارك إلى منتجات حقيقية وتنمية أعمالك.",
+  "get_started": "ابدأ الآن",
+
   "web_development": "تطوير المواقع",
   "web_development_description": "مواقع حديثة وسريعة وقابلة للتوسع مصممة لخدمة نشاطك التجاري.",
 
@@ -21,7 +34,7 @@
   "app_development_description": "تطبيقات موبايل قوية تحول أفكارك إلى منتجات رقمية حقيقية.",
 
   "digital_marketing": "التسويق الرقمي",
-  "digital_marketing_description": "استراتيجيات تسويق رقمية ذكية تساعد علامتك التجارية على الوصول للجمهور المناسب.",
+  "digital_marketing_description": "استراتيجيات تسويق رقمية ذكية تساعد علامتك التجارية على الوصول إلى الجمهور المناسب.",
 
   "motion_graphics": "الموشن جرافيك",
   "motion_graphics_description": "محتوى بصري جذاب يساعد علامتك التجارية على الظهور والتميز.",
@@ -29,11 +42,160 @@
   "cybersecurity": "الأمن السيبراني",
   "cybersecurity_description": "احمِ أصولك الرقمية من خلال حلول أمنية موثوقة.",
 
-  "training": "التدريب المؤسسي",
+  "training2": "التدريب المؤسسي",
   "training_description": "برامج تدريب عملية مصممة لتطوير مهارات فريق العمل.",
 
-  "courses": "الكورسات الاحترافية",
-  "courses_description": "تعلم مهارات عملية من خلال كورسات متخصصة تساعدك على التطور الحقيقي.",
+  "courses2": "الكورسات الاحترافية",
+  "courses_description": "تعلّم مهارات عملية من خلال كورسات متخصصة تساعدك على التطور الحقيقي.",
+
+
+  "web_development_service_details_title": "تطوير موقع يخدم نشاطك التجاري",
+  "web_development_service_details_description": "نصمم ونطوّر مواقع حديثة تساعد نشاطك التجاري على بناء حضور رقمي قوي وتأسيس قاعدة للنمو.",
+
+  "web_development_service_section_1_title": "ماذا نقدم؟",
+  "web_development_service_section_1_description": "حلول ويب مصممة بناءً على أهداف نشاطك التجاري واحتياجات جمهورك وخططك المستقبلية.",
+  "web_development_service_point_1": "مواقع متجاوبة مع الموبايل والتابلت والكمبيوتر.",
+  "web_development_service_point_2": "بنية حديثة وقابلة للتوسع.",
+  "web_development_service_point_3": "تجربة مستخدم منظمة واحترافية.",
+
+  "web_development_service_section_2_title": "القيمة التي يقدمها الموقع",
+  "web_development_service_section_2_description": "الموقع الإلكتروني يجب أن يكون أصلًا حقيقيًا يساعد نشاطك التجاري، وليس مجرد وجود على الإنترنت.",
+  "web_development_service_point_4": "بناء الثقة مع العملاء.",
+  "web_development_service_point_5": "تأسيس قوي للنمو والتوسع مستقبلًا.",
+
+
+  "app_development_service_details_title": "تطبيق موبايل مبني حول فكرتك",
+  "app_development_service_details_description": "نحوّل فكرتك إلى تطبيق موبايل قوي مصمم حول احتياجات المستخدمين وأهداف نشاطك التجاري.",
+
+  "app_development_service_section_1_title": "ماذا نقدم؟",
+  "app_development_service_section_1_description": "تطبيقات موبايل تركز على سهولة الاستخدام والأداء وتجربة المستخدم الاحترافية.",
+  "app_development_service_point_1": "تطبيقات حديثة لأندرويد وiOS.",
+  "app_development_service_point_2": "واجهات وتجارب مستخدم تركز على احتياجات المستخدم.",
+  "app_development_service_point_3": "بنية قابلة للتوسع وإضافة خصائص مستقبلية.",
+
+  "app_development_service_section_2_title": "من الفكرة إلى المنتج",
+  "app_development_service_section_2_description": "نساعدك على تحويل فكرتك إلى منتج رقمي حقيقي يمكنه النمو مع نشاطك التجاري.",
+  "app_development_service_point_4": "عملية تطوير واضحة من الفكرة حتى الإطلاق.",
+  "app_development_service_point_5": "ربط التطبيقات بالـ APIs وقواعد البيانات والأنظمة المختلفة.",
+
+
+  "digital_marketing_service_details_title": "تسويق رقمي يدفع علامتك إلى الأمام",
+  "digital_marketing_service_details_description": "نضع استراتيجيات تسويق رقمية تساعد علامتك التجارية على الوصول إلى الجمهور المناسب وبناء حضور أقوى على الإنترنت.",
+
+  "digital_marketing_service_section_1_title": "ما الذي نركز عليه؟",
+  "digital_marketing_service_section_1_description": "استراتيجيات تسويق مبنية حول جمهورك وأهدافك وهوية علامتك التجارية.",
+  "digital_marketing_service_point_1": "استراتيجيات رقمية تركز على الجمهور.",
+  "digital_marketing_service_point_2": "تخطيط المحتوى والحملات.",
+  "digital_marketing_service_point_3": "زيادة الوعي بالعلامة التجارية والحضور الرقمي.",
+
+  "digital_marketing_service_section_2_title": "النمو التجاري",
+  "digital_marketing_service_section_2_description": "الهدف ليس مجرد جذب الانتباه، بل بناء علاقة حقيقية مع العملاء المحتملين.",
+  "digital_marketing_service_point_4": "الوصول إلى الجمهور المناسب.",
+  "digital_marketing_service_point_5": "بناء حضور أقوى وأكثر اتساقًا للعلامة التجارية.",
+
+
+  "motion_graphics_service_details_title": "محتوى بصري يجعل علامتك مميزة",
+  "motion_graphics_service_details_description": "نصمم موشن جرافيك جذابًا يساعدك على توصيل رسالتك وبناء هوية بصرية أقوى لعلامتك التجارية.",
+
+  "motion_graphics_service_section_1_title": "ماذا نصنع؟",
+  "motion_graphics_service_section_1_description": "محتوى بصري مصمم لجذب الانتباه وتوصيل الأفكار بشكل واضح.",
+  "motion_graphics_service_point_1": "فيديوهات ترويجية وإعلانية.",
+  "motion_graphics_service_point_2": "محتوى متحرك للعلامة التجارية.",
+  "motion_graphics_service_point_3": "محتوى بصري للمنصات الرقمية.",
+
+
+  "cybersecurity_service_details_title": "احمِ بيئتك الرقمية",
+  "cybersecurity_service_details_description": "نساعد الأنشطة التجارية على تقوية أمنها الرقمي وتقليل المخاطر التي قد تؤثر على الأنظمة والبنية التحتية.",
+
+  "cybersecurity_service_section_1_title": "الحلول الأمنية",
+  "cybersecurity_service_section_1_description": "حلول أمنية عملية مصممة حول بيئتك الرقمية واحتياجات نشاطك التجاري.",
+  "cybersecurity_service_point_1": "تحديد المخاطر الأمنية المحتملة.",
+  "cybersecurity_service_point_2": "تقوية الأنظمة والبنية التحتية الرقمية.",
+  "cybersecurity_service_point_3": "تحسين الوعي الأمني ومستوى الحماية.",
+
+
+  "course_content": "محتوى الكورس",
+  "what_you_will_learn": "ماذا ستتعلم؟",
+
+  "web_development_course_details_title": "كورس تطوير المواقع",
+  "web_development_course_details_description": "ابنِ أساسًا عمليًا في تطوير المواقع الحديثة وتعلم كيفية إنشاء مشاريع ويب حقيقية.",
+
+  "web_development_course_content_description": "مسار عملي يغطي المفاهيم الأساسية التي تحتاجها للبدء في بناء مواقع حديثة.",
+  "web_development_course_point_1": "HTML وبناء هيكل صفحات الويب.",
+  "web_development_course_point_2": "CSS وتصميم الصفحات المتجاوبة.",
+  "web_development_course_point_3": "أساسيات JavaScript وإنشاء صفحات تفاعلية.",
+
+  "web_development_course_learning_description": "بنهاية الكورس ستكون لديك الأساسيات التي تساعدك على الاستمرار في بناء مشاريع ويب حقيقية.",
+  "web_development_course_learning_point_1": "بناء مواقع متجاوبة.",
+  "web_development_course_learning_point_2": "فهم أساسيات تطوير الواجهات الحديثة.",
+  "web_development_course_learning_point_3": "إنشاء مشاريع عملية تضاف إلى معرض أعمالك.",
+
+
+  "app_development_course_details_title": "كورس تطوير التطبيقات",
+  "app_development_course_details_description": "تعلم بناء تطبيقات الموبايل وتحويل الأفكار إلى منتجات رقمية عملية.",
+
+  "app_development_course_content_description": "مقدمة عملية في تطوير تطبيقات الموبايل والمفاهيم التي تقف وراء التطبيقات الحقيقية.",
+  "app_development_course_point_1": "أساسيات تطوير تطبيقات الموبايل.",
+  "app_development_course_point_2": "واجهات المستخدم وهيكلة التطبيق.",
+  "app_development_course_point_3": "ربط التطبيقات بخدمات الـ Backend.",
+
+  "app_development_course_learning_description": "طوّر المهارات التي تحتاجها للاستمرار في بناء تطبيقات موبايل متكاملة.",
+  "app_development_course_learning_point_1": "بناء تطبيقات موبايل منظمة.",
+  "app_development_course_learning_point_2": "التعامل مع APIs وخدمات الـ Backend.",
+  "app_development_course_learning_point_3": "إنشاء مشاريع عملية تضاف إلى معرض أعمالك.",
+
+
+  "digital_marketing_course_details_title": "كورس التسويق الرقمي",
+  "digital_marketing_course_details_description": "تعلم أساسيات التسويق الرقمي وكيفية بناء استراتيجيات تربط العلامات التجارية بجمهورها.",
+
+  "digital_marketing_course_content_description": "افهم المفاهيم الأساسية التي يعتمد عليها التسويق الرقمي الحديث.",
+  "digital_marketing_course_point_1": "أساسيات التسويق الرقمي.",
+  "digital_marketing_course_point_2": "استراتيجية الجمهور والمحتوى.",
+  "digital_marketing_course_point_3": "تخطيط الحملات والنمو الرقمي.",
+
+
+  "motion_graphics_course_details_title": "كورس الموشن جرافيك",
+  "motion_graphics_course_details_description": "تعلم أساسيات الموشن جرافيك وأنشئ محتوى بصريًا جذابًا.",
+
+  "motion_graphics_course_content_description": "تعرّف على المفاهيم وطريقة العمل وراء إنشاء موشن جرافيك احترافي.",
+  "motion_graphics_course_point_1": "أساسيات الحركة والأنيميشن.",
+  "motion_graphics_course_point_2": "السرد البصري.",
+  "motion_graphics_course_point_3": "إنشاء محتوى متحرك جذاب.",
+
+
+  "cybersecurity_course_details_title": "كورس الأمن السيبراني",
+  "cybersecurity_course_details_description": "ابنِ أساسًا عمليًا في الأمن السيبراني وتعلم كيفية حماية الأنظمة الرقمية.",
+
+  "cybersecurity_course_content_description": "تعلم المفاهيم الأساسية وراء الأمن السيبراني والحماية الرقمية.",
+  "cybersecurity_course_point_1": "أساسيات الأمن السيبراني.",
+  "cybersecurity_course_point_2": "أهم المخاطر الأمنية الرقمية.",
+  "cybersecurity_course_point_3": "ممارسات الحماية والأمان الأساسية.",
+
+
+  "training_content": "محتوى التدريب",
+
+  "web_development_training_details_title": "تدريب تطوير المواقع",
+  "web_development_training_details_description": "تدريب عملي في تطوير المواقع يركز على تقوية المهارات التقنية من خلال التطبيق العملي.",
+  "web_development_training_content_description": "تدريب مركز على التطوير العملي وتنفيذ المشاريع الحقيقية.",
+  "web_development_training_point_1": "أساليب العمل العملية في تطوير المواقع.",
+  "web_development_training_point_2": "بناء ومراجعة مشاريع حقيقية.",
+  "web_development_training_point_3": "تحسين ممارسات التطوير.",
+
+  "app_development_training_details_title": "تدريب تطوير التطبيقات",
+  "app_development_training_details_description": "تدريب عملي في تطوير تطبيقات الموبايل يركز على بناء التطبيقات وتحسين المهارات البرمجية.",
+  "app_development_training_content_description": "تدريب يركز على تطوير التطبيقات عمليًا وتنفيذ مشاريع حقيقية.",
+  "app_development_training_point_1": "هندسة التطبيقات وتطويرها.",
+  "app_development_training_point_2": "بناء خصائص عملية لتطبيقات الموبايل.",
+  "app_development_training_point_3": "تحسين أسلوب العمل في التطوير.",
+
+  "cybersecurity_training_details_title": "تدريب الأمن السيبراني",
+  "cybersecurity_training_details_description": "تدريب عملي في الأمن السيبراني يركز على رفع الوعي الأمني وتطوير مهارات الحماية التقنية.",
+  "cybersecurity_training_content_description": "تدريب عملي يغطي مفاهيم الأمان الأساسية والممارسات الدفاعية.",
+  "cybersecurity_training_point_1": "أساسيات الأمن والوعي الأمني.",
+  "cybersecurity_training_point_2": "التعرف على المخاطر الأمنية الشائعة.",
+  "cybersecurity_training_point_3": "ممارسات الحماية والدفاع العملية.",
+
+
   "profile": "الملف الشخصي",
   "settings": "الإعدادات",
   "account": "الحساب",
@@ -47,12 +209,8 @@
   "theme": "المظهر",
   "light": "فاتح",
   "dark": "داكن",
+
   "login": "تسجيل الدخول",
   "register": "إنشاء حساب",
-  "settings": "الإعدادات",
-  "language": "اللغة",
-  "theme": "المظهر",
-  "light": "فاتح",
-  "dark": "داكن",
   "system": "النظام"
 }

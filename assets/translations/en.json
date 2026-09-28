@@ -4,21 +4,33 @@
   "title1": "Learn. Create. Unleash.",
   "description1": "A single platform for everything you need to be creative, learn, and build your career.",
   "title2": "Practical skills, real opportunities.",
-  "description2": "Access to specialized courses, hands-on training, and guidance from real professionals.\n",
+  "description2": "Access specialized courses, hands-on training, and guidance from real professionals.",
   "title3": "Your professional journey starts here.",
   "description3": "Join a community that believes in your potential and helps you turn it into real success.",
   "Next": "Next",
-  "skip": "skip",
-  "start_now": "start_now",
+  "skip": "Skip",
+  "start_now": "Start Now",
   "home": "Home",
+
   "academy": "Academy",
+  "academy_courses_title": "Learn. Build. Grow.",
+  "academy_courses_description": "Build practical skills through courses designed to help you learn and create.",
+  "academy_training_title": "Train. Practice. Advance.",
+  "academy_training_description": "Technical training focused on practical programming and development skills.",
+  "courses": "Courses",
+  "training": "Training",
+
   "business_library": "Business Library",
 
   "services": "Services",
+  "services_title": "Build. Grow. Go Further.",
+  "services_description": "Digital services that turn your ideas into real products and help your business grow.",
+  "get_started": "Get Started",
+
   "web_development": "Web Development",
   "web_development_description": "Modern, fast, and scalable websites built for your business.",
 
-  "app_mobile_development": "App Development",
+  "app_development": "App Development",
   "app_development_description": "Powerful mobile apps designed to turn your ideas into real products.",
 
   "digital_marketing": "Digital Marketing",
@@ -30,11 +42,159 @@
   "cybersecurity": "Cybersecurity",
   "cybersecurity_description": "Protect your digital assets with reliable security solutions.",
 
-  "training": "Corporate Training",
+  "training2": "Corporate Training",
   "training_description": "Practical training programs designed to develop your team's skills.",
 
-  "courses": "Professional Courses",
+  "courses2": "Professional Courses",
   "courses_description": "Learn practical skills through focused courses built for real-world growth.",
+
+
+  "web_development_service_details_title": "Web Development for Your Business",
+  "web_development_service_details_description": "We build modern websites that help your business establish a strong digital presence and create a foundation for growth.",
+
+  "web_development_service_section_1_title": "What We Build",
+  "web_development_service_section_1_description": "Web solutions designed around your business goals, audience, and future growth.",
+  "web_development_service_point_1": "Responsive websites for mobile, tablet, and desktop.",
+  "web_development_service_point_2": "Modern and scalable architecture.",
+  "web_development_service_point_3": "Clean and professional user experience.",
+
+  "web_development_service_section_2_title": "Business Value",
+  "web_development_service_section_2_description": "Your website should work as a real business asset, not just an online presence.",
+  "web_development_service_point_4": "Build trust with your customers.",
+  "web_development_service_point_5": "Create a strong foundation for future growth.",
+
+
+  "app_development_service_details_title": "Mobile Apps Built Around Your Idea",
+  "app_development_service_details_description": "We transform your idea into a powerful mobile application designed around your users and business goals.",
+
+  "app_development_service_section_1_title": "What We Build",
+  "app_development_service_section_1_description": "Mobile applications focused on usability, performance, and a professional experience.",
+  "app_development_service_point_1": "Modern mobile applications for Android and iOS.",
+  "app_development_service_point_2": "User-focused interfaces and experiences.",
+  "app_development_service_point_3": "Scalable architecture ready for future features.",
+
+  "app_development_service_section_2_title": "From Idea to Product",
+  "app_development_service_section_2_description": "We help turn your concept into a real digital product that can grow with your business.",
+  "app_development_service_point_4": "Clear development process from idea to launch.",
+  "app_development_service_point_5": "Integration with APIs, databases, and business systems.",
+
+
+  "digital_marketing_service_details_title": "Digital Marketing That Moves Your Brand Forward",
+  "digital_marketing_service_details_description": "We create digital marketing strategies that help your brand reach the right audience and build a stronger online presence.",
+
+  "digital_marketing_service_section_1_title": "What We Focus On",
+  "digital_marketing_service_section_1_description": "Marketing strategies built around your audience, goals, and brand identity.",
+  "digital_marketing_service_point_1": "Audience-focused digital strategies.",
+  "digital_marketing_service_point_2": "Content and campaign planning.",
+  "digital_marketing_service_point_3": "Brand awareness and online presence.",
+
+  "digital_marketing_service_section_2_title": "Business Growth",
+  "digital_marketing_service_section_2_description": "The goal is not simply to get attention, but to build meaningful connections with potential customers.",
+  "digital_marketing_service_point_4": "Reach the right audience.",
+  "digital_marketing_service_point_5": "Build a stronger and more consistent brand presence.",
+
+
+  "motion_graphics_service_details_title": "Visual Content That Makes Your Brand Stand Out",
+  "motion_graphics_service_details_description": "We create engaging motion graphics that communicate your message and give your brand a stronger visual identity.",
+
+  "motion_graphics_service_section_1_title": "What We Create",
+  "motion_graphics_service_section_1_description": "Visual content designed to capture attention and communicate ideas clearly.",
+  "motion_graphics_service_point_1": "Promotional and advertising videos.",
+  "motion_graphics_service_point_2": "Animated brand content.",
+  "motion_graphics_service_point_3": "Visual content for digital platforms.",
+
+
+  "cybersecurity_service_details_title": "Protect Your Digital Environment",
+  "cybersecurity_service_details_description": "We help businesses strengthen their digital security and reduce risks across their systems and infrastructure.",
+
+  "cybersecurity_service_section_1_title": "Security Solutions",
+  "cybersecurity_service_section_1_description": "Practical security solutions designed around your digital environment and business needs.",
+  "cybersecurity_service_point_1": "Identify potential security risks.",
+  "cybersecurity_service_point_2": "Strengthen systems and digital infrastructure.",
+  "cybersecurity_service_point_3": "Improve security awareness and protection.",
+
+
+  "course_content": "Course Content",
+  "what_you_will_learn": "What You Will Learn",
+
+  "web_development_course_details_title": "Web Development Course",
+  "web_development_course_details_description": "Build a practical foundation in modern web development and learn how to create real web projects.",
+
+  "web_development_course_content_description": "A practical learning path covering the essential concepts needed to start building modern websites.",
+  "web_development_course_point_1": "HTML and semantic page structure.",
+  "web_development_course_point_2": "CSS and responsive layouts.",
+  "web_development_course_point_3": "JavaScript fundamentals and interactive web pages.",
+
+  "web_development_course_learning_description": "By the end of the course, you will have the foundation needed to continue building real-world web projects.",
+  "web_development_course_learning_point_1": "Build responsive websites.",
+  "web_development_course_learning_point_2": "Understand modern frontend development.",
+  "web_development_course_learning_point_3": "Create practical projects for your portfolio.",
+
+
+  "app_development_course_details_title": "App Development Course",
+  "app_development_course_details_description": "Learn how to build mobile applications and turn ideas into practical digital products.",
+
+  "app_development_course_content_description": "A practical introduction to mobile application development and the concepts behind real-world apps.",
+  "app_development_course_point_1": "Mobile application fundamentals.",
+  "app_development_course_point_2": "User interfaces and application structure.",
+  "app_development_course_point_3": "Connecting applications with backend services.",
+
+  "app_development_course_learning_description": "Build the skills needed to continue developing complete mobile applications.",
+  "app_development_course_learning_point_1": "Build structured mobile applications.",
+  "app_development_course_learning_point_2": "Work with APIs and backend services.",
+  "app_development_course_learning_point_3": "Create practical projects for your portfolio.",
+
+
+  "digital_marketing_course_details_title": "Digital Marketing Course",
+  "digital_marketing_course_details_description": "Learn the foundations of digital marketing and how to build strategies that connect brands with their audiences.",
+
+  "digital_marketing_course_content_description": "Understand the core concepts behind modern digital marketing.",
+  "digital_marketing_course_point_1": "Digital marketing fundamentals.",
+  "digital_marketing_course_point_2": "Audience and content strategy.",
+  "digital_marketing_course_point_3": "Campaign planning and online growth.",
+
+
+  "motion_graphics_course_details_title": "Motion Graphics Course",
+  "motion_graphics_course_details_description": "Learn the fundamentals of motion graphics and create engaging visual content.",
+
+  "motion_graphics_course_content_description": "Explore the concepts and workflow behind creating professional motion graphics.",
+  "motion_graphics_course_point_1": "Motion and animation fundamentals.",
+  "motion_graphics_course_point_2": "Visual storytelling.",
+  "motion_graphics_course_point_3": "Creating engaging animated content.",
+
+
+  "cybersecurity_course_details_title": "Cybersecurity Course",
+  "cybersecurity_course_details_description": "Build a practical foundation in cybersecurity and understand how to protect digital systems.",
+
+  "cybersecurity_course_content_description": "Learn the fundamental concepts behind cybersecurity and digital protection.",
+  "cybersecurity_course_point_1": "Cybersecurity fundamentals.",
+  "cybersecurity_course_point_2": "Common digital security risks.",
+  "cybersecurity_course_point_3": "Basic security practices and protection.",
+
+
+  "training_content": "Training Content",
+
+  "web_development_training_details_title": "Web Development Training",
+  "web_development_training_details_description": "Practical web development training designed to strengthen technical skills through hands-on work.",
+  "web_development_training_content_description": "Focused training built around practical development and real implementation.",
+  "web_development_training_point_1": "Practical web development workflows.",
+  "web_development_training_point_2": "Building and reviewing real projects.",
+  "web_development_training_point_3": "Improving development practices.",
+
+  "app_development_training_details_title": "App Development Training",
+  "app_development_training_details_description": "Hands-on mobile development training focused on building practical applications and improving development skills.",
+  "app_development_training_content_description": "Training focused on practical application development and real project implementation.",
+  "app_development_training_point_1": "Application architecture and development.",
+  "app_development_training_point_2": "Building practical mobile features.",
+  "app_development_training_point_3": "Improving development workflows.",
+
+  "cybersecurity_training_details_title": "Cybersecurity Training",
+  "cybersecurity_training_details_description": "Practical cybersecurity training focused on improving security awareness and technical protection skills.",
+  "cybersecurity_training_content_description": "Hands-on training covering practical security concepts and defensive practices.",
+  "cybersecurity_training_point_1": "Security fundamentals and awareness.",
+  "cybersecurity_training_point_2": "Identifying common security risks.",
+  "cybersecurity_training_point_3": "Practical protection and defensive practices.",
+
 
   "profile": "Profile",
   "settings": "Settings",
@@ -52,10 +212,5 @@
 
   "login": "Login",
   "register": "Register",
-  "settings": "Settings",
-  "language": "Language",
-  "theme": "Theme",
-  "light": "Light",
-  "dark": "Dark",
   "system": "System"
 }

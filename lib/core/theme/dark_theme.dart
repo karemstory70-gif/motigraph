@@ -11,9 +11,16 @@ class DarkTheme {
       colorScheme: const ColorScheme.dark(
         primary: Colors.white,
         secondary: Colors.white,
+
+        tertiary: Color(0xFFD4AF37),
+
         surface: Colors.black,
+
         onPrimary: Colors.black,
         onSecondary: Colors.black,
+
+        onTertiary: Colors.black,
+
         onSurface: Colors.white,
       ),
 

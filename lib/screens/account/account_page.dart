@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:motigraph/core/moti_glass_card.dart';
+import 'package:motigraph/widgets/moti_glass_card.dart';
 import 'package:motigraph/settings/app_settings_controller.dart';
 
 class AccountPage extends StatefulWidget {

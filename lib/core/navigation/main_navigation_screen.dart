@@ -84,7 +84,10 @@ class _MainNavigationScreenState
         children: [
           const HomePage(),
 
-          const AcademyPage(),
+          AcademyPage(
+            settingsController:
+            widget.settingsController,
+          ),
 
           const BusinessLibraryPage(),
 
